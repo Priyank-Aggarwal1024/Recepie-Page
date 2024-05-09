@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Recipe page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 20px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .main {
+        padding: 2rem;
+        border-radius: 1rem;
+        background-color: white;
+      }
+      .box {
+        max-width: 680px;
+      }
+      body {
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+        padding: 4rem 0;
+      }
+      img {
+        border-radius: 0.7rem;
+      }
+      h1 {
+        margin: 1rem 0;
+      }
+      .inner {
+        padding: 1rem;
+        border-radius: 0.7rem;
+        background-color: rgba(238, 146, 146, 0.301);
+      }
+      .bottom > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .bottom > div > div {
+        padding: 1.2rem 0;
+      }
+      .bottom > div > div + div {
+        color: brown;
+      }
+      h2 {
+        color: brown;
+        padding: 1rem 0;
+      }
+      .box > div > div {
+        margin: 2rem 0;
+      }
+      .same {
+        padding: 0 1rem;
+      }
+      li {
+        padding: 0.8rem 0;
+      }
+      h3 {
+        color: rgb(143, 20, 112);
+      }
+      .inner > div > ul > li {
+        padding: 0.8rem 0 0.8rem 1rem;
+      }
+      li,
+      p {
+        color: rgb(41, 41, 41);
+      }
+      li::marker {
+        color: brown;
+        font-weight: bold;
+      }
+      .inner li::marker {
+        color: rgb(131, 12, 111);
+      }
+      b {
+        color: black;
+      }
+      @media (width<=580px) {
+        html {
+          font-size: 15px;
+        }
+        img {
+          border-radius: 0;
+        }
+        body {
+          display: block;
+          padding: 0;
+        }
+        .box {
+          width: 100%;
+        }
+        .main {
+          padding: 0;
+        }
+        .inside {
+          padding: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="box">
+        <img src="./assets/images/image-omelette.jpeg" width="100%" alt="" />
+        <div class="inside">
+          <h1>Simple Omelette Recipe</h1>
+          <p>
+            An easy and quick dish, perfect for any meal. This classic omelette
+            combines beaten eggs cooked to perfection, optionally filled with
+            your choice of cheese, vegetables, or meats.
+          </p>
+          <div class="inner">
+            <h3>Preparation time</h3>
+            <div style="padding: 1rem">
+              <ul>
+                <li><b>Total:</b> Approximately 10 minutes</li>
+                <li><b>Preparation:</b> 5 minutes</li>
+                <li><b>Cooking:</b> 5 minutes</li>
+              </ul>
+            </div>
+          </div>
+          <div class="same">
+            <h2>Ingredients</h2>
+            <div class="list">
+              <ul>
+                <li>2-3 large eggs</li>
+                <li>Salt, to taste</li>
+                <li>Pepper, to taste</li>
+                <li>1 tablespoon of butter or oil</li>
+                <li>
+                  Optional fillings: cheese, diced vegetables, cooked meats,
+                  herbs
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <div class="same">
+            <h2>Instructions</h2>
+            <div class="list">
+              <ol>
+                <li>
+                  <b>Beat the eggs:</b>In a bowl, beat the eggs with a pinch of
+                  salt and pepper until they are well mixed. You can add a
+                  tablespoon of water or milk for a fluffier texture.
+                </li>
+                <li>
+                  <b>Heat the pan:</b>Place a non-stick frying pan over medium
+                  heat and add butter or oil.
+                </li>
+                <li>
+                  <b>Cook the omelette:</b>Once the butter is melted and
+                  bubbling, pour in the eggs.Tilt the pan to ensure the eggs
+                  evenly coat the surface.
+                </li>
+                <li>
+                  <b>Add fillings (optional):</b>When the eggs begin to set at
+                  the edges but are still slightly runny in the middle, sprinkle
+                  your chosen fillings over one half of the omelette.
+                </li>
+                <li>
+                  <b>Fold and serve:</b>
+                  As the omelette continues to cook, carefully lift one edge and
+                  fold it over the fillings. Let it cook for another minute,
+                  then slide it onto a plate.
+                </li>
+                <li>
+                  <b>Enjoy:</b>Serve hot, with additional salt and pepper if
+                  needed.
+                </li>
+              </ol>
+            </div>
+          </div>
+          <hr />
+          <div class="same">
+            <h2>Nutrition</h2>
+            <p>
+              The table below shows nutritional values per serving without the
+              additional fillings.
+            </p>
+            <div class="bottom">
+              <div>
+                <div>Calories</div>
+                <div><b>277kcal</b></div>
+              </div>
+              <hr />
+              <div>
+                <div>Carbs</div>
+                <div><b>0g</b></div>
+              </div>
+              <hr />
+              <div>
+                <div>Protein</div>
+                <div><b>20g</b></div>
+              </div>
+              <hr />
+              <div>
+                <div>Fat</div>
+                <div><b>22g</b></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="#">Priyank Aggarwal</a>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
